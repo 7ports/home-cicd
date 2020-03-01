@@ -1,0 +1,11 @@
+pipeline {
+    stages {
+        stage("Check if file dir exists if not create"){
+            sh '''
+                DIR="fileshare"
+                if [ -d "$DIR" ]; then
+                    
+            '''
+        }
+    }
+}
